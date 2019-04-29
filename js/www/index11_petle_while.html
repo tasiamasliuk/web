@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang = "pl">
+
+<head>
+  <script language="JavaScript">
+	var i = 0;
+	while (i < 100) {
+		document.write("To jest efekt pętli while<br>");
+		i++;
+	}
+  </script>
+
+	<script type="text/javascript">
+	  document.write("<br>Liczby od 1 do 20, ale nie podzielne przez 2: <br>");
+		var i = 1;
+		while (i <= 20){
+			if (i%2!=0)
+				document.write(i + " ");
+			i++;
+		}
+	</script>
+
+	<script language="JavaScript">
+		document.write("<br><br>Liczby od 1 do 20, ale podzielne przez 3: <br>");
+		var i = 1;
+		while (i <= 20){
+			if (i%3==0)
+				document.write(i + " ");
+			i++;
+		}
+	</script>
+
+	<script language="JavaScript">
+		document.write("<br><br>Program pobera liczbe naturalne do momentu podania liczby podzielnej przez 12 <br>");
+		var i = 0;
+		var agd = 0;
+		do{
+
+			var liczba = prompt('Podaj liczbę =','');
+			agd = parseInt(agd) + parseInt(liczba);
+			i++;
+		} while (liczba != 0)
+		agd = parseInt(agd)/parseInt(i);
+		document.write("Średnie = " + agd);
+	</script>
+
+	<script language="JavaScript">
+		document.write("<br><br>Program pobera liczbe naturalne do momentu podania liczby podzielnej przez 12 <br>");
+		var warunek = true;
+		while (warunek){
+			var liczba = prompt('Podaj liczbę =','');
+			if (liczba%12==0){
+				alart("Podałeś liczbę podzielną przez 12, wiec kończę działanie pętli");
+				warunek = false;
+			}
+		}
+	</script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

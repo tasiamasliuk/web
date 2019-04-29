@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang = "pl">
+
+<head>
+	<meta
+	<meta charset = "utf-8">
+	<meta name = "description" content = "JS Script. IF. ELSE. SWITCH">
+	<meta name = "keywords" content = "JavaScript">
+	<meta name = "author" content = "Tetiana Masliuk">
+
+	<title> JS </title>
+
+  <script language="JavaScript">
+    alert("Podaj boki trójkonta: ")
+    var a = prompt('a =','');
+    var b = prompt('b =','');
+    var c = prompt('c =','');
+
+    if ((parseInt(a) + parseInt(b) > c) && (parseInt(a) + parseInt(c) > b) && (parseInt(b) + parseInt(c) > a)) {
+       alert("trójkąt mogę być utwożony");
+       if (c*c == (b*b + a*a)){
+         alert("Trójkąt jest prostokątny");
+       }
+    }
+    else{
+      alert("Trójkąt nie mogę być utwożony");
+    }
+  </script>
+
+  <script language="JavaScript">
+    alert("Podaj 3 liczby: ")
+    var a = prompt('a =','');
+    var b = prompt('b =','');
+    var c = prompt('c =','');
+
+    var sr = (parseInt(a)+parseInt(b)+parseInt(c))/(3);
+    alert("Średnie - "+ sr);
+
+    if ((a > b) && (a > c)){
+      alert("MAX = "+ a);
+    }
+    else if (b > c){
+      alert("MAX = "+ b);
+    }
+    else{
+      alert("MAX = "+ c);
+    }
+
+    if ((a < b) && (a < c)){
+      alert("MIN = "+ a);
+    }
+    else if (b < c){
+      alert("MIN = "+ b);
+    }
+    else{
+      alert("MIN = "+ c);
+    }
+
+    if((a<b)&&(a>c)){
+      alert("Medianę: " + a);
+    }
+    else if ((b<c)&&(b>a)) {
+      alert("Medianę: " + b);
+    }
+    else{
+      alert("Medianę: " + c);
+    }
+
+  </script>
+
+
+
+  <script language="JavaScript">
+    alert("Proszę podać 3 liczbę całkowitę: ")
+    var a = prompt('a =','');
+    var b = prompt('b =','');
+    var c = prompt('c =','');
+
+    if (a < b) {
+      if (a < c){
+        if (b < c){
+          alert(a + " " + b + " " + c);
+        }
+        if (c < b){
+          alert(a + " " + c + " " + b);
+        }
+      }
+    }
+
+    else if (b < c) {
+      if (b < a){
+        if (c < a){
+          alert(b + " " + c + " " + a);
+        }
+        if (a < c){
+          alert(b + " " + a + " " + c);
+        }
+      }
+    }
+
+    else if (c < a) {
+      if (c < b){
+        if (a < b){
+          alert(c + " " + a + " " + b);
+        }
+        if (b < a){
+          alert(c + " " + b + " " + a);
+        }
+      }
+    }
+
+  </script>
+
+  <script language="JavaScript">
+    var a = prompt('y = ax2 + bx + c.   a =','');
+    var b = prompt('y = ax2 + bx + c.   b =','');
+    var c = prompt('y = ax2 + bx + c.   c =','');
+
+    var delta = parseInt(b)*parseInt(b)-4*parseInt(a)*parseInt(c);
+    if (delta > 0) {
+      var x1 = (-parseInt(b) - Math.sqrt(parseInt(delta)))/2*parseInt(a);
+      var x2 = (-parseInt(b) + Math.sqrt(parseInt(delta)))/2*parseInt(a);
+       alert("RÓWNANIE MA DWA PERWIASTKI X1 = " + x1 + " X2 = " + x2);
+    }
+    if (delta = 0) {
+       var x = (-parseInt(b))/2*parseInt(a);
+       alert("Perwiastek równiania x = " + x);
+    }
+    else{
+      alert("Perwiasteków nie ma");
+    }
+  </script>
+
+  <script language="JavaScript">
+    var liczba1 = prompt('Prosze podać 2 liczbę (+ lub -)','');
+    var liczba2 = prompt('I jaszcze 1 liczbę (+ lub -)','');
+    if (liczba1>=0 && liczba2>=0) {
+       alert("LICZBY SĄ DODATNIE");
+    }
+    if (liczba1>=0 && liczba2<0) {
+       alert("LICZBA 1 JEST DODATNIA I LICZBA 2 JAST UJEMNA");
+    }
+    if (liczba2>=0 && liczba1<0) {
+       alert("LICZBA 2 JEST DODATNIA I LICZBA 1 JAST UJEMNA");
+    }
+    if (liczba2<0 && liczba1<0) {
+       alert("LICZBY SĄ UJEMNE");
+    }
+
+  </script>
+
+  <script language="JavaScript">
+    var a = prompt('Czy liczba a jest podzielna przez b. a =','');
+    var b = prompt('I druga liczba b = ','');
+
+    if (a%b>0) {
+       alert("A NIE JEST PODZIELNE PRZEZ B");
+    }
+    else {
+       alert("A JEST PODZIELNE PRZEZ");
+    }
+  </script>
+
+  <script language="JavaScript">
+    var ocena = prompt('Oceń moją strone (1-6)','');
+    switch (ocena){
+      case '1':
+        alert("to zła ocena");
+      break;
+      case '2':
+        alert("ocena dla ludzi bez ambicji");
+      break;
+      case '3':
+        alert("ocena dla przeciętniaków");
+      break;
+      case '4':
+        alert("świetna ocena");
+      break;
+      case '5':
+        alert("wysoka ocena");
+      break;
+      case '6':
+        alert("ocena oniryczna");
+      break;
+      default:
+        alert("Miała być ocena a nie dowolna liczba!");
+    }
+  </script>
+
+  <script language="JavaScript">
+    var liczba = prompt('Prosze podać liczbę (sprawdzenia na parzystość)','');
+    if (liczba%2==0) {
+        alert("LICZBA JEST PARZYSTA");
+    }
+    else {
+      alert("LICZBA JEST NIEPARZYSTA");
+    }
+  </script>
+
+  <script language="JavaScript">
+    var a = prompt('Prosze podać 2 liczby (a i b) a = ','');
+    var b = prompt('I druga liczba b = ','');
+    if (a>b) {
+       alert("LICZBA a JEST WIĘKSZA");
+    }
+    else {
+       alert("LICZBA b JEST WIĘKSZA");
+    }
+  </script>
+
+  <script language="JavaScript">
+    var a = prompt('Prosze podać 2 liczby (a i b) a = ','');
+    var b = prompt('I druga liczba b = ','');
+    if (a>b) {
+       alert("LICZBA b JEST MNIEJSZA");
+    }
+    else {
+       alert("LICZBA a JEST MNIEJSZA");
+    }
+  </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

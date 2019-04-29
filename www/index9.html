@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang = "pl">
+<!-- przykład komentarzu -->
+
+<head>
+	<meta
+	<meta charset = "utf-8">
+	<meta name = "description" content = "JS Script">
+	<meta name = "keywords" content = "Script">
+	<meta name = "author" content = "Tetiana Masliuk">
+
+	<title> JS </title>
+</head>
+
+<body>
+  <script type="text/javascript">     //tej script puta na jakej wysokości lecimy i wyszwietle komunikat z wynikiem na ekran
+    var wysokość = prompt('Na jakiej wysokości lecimy? Wynik podaj wmetrach','');
+    var message = "Lecimy na ["+wysokość+"] metrach";
+    document.write(message);
+  </script>
+
+  <hr>
+
+  <script type="text/javascript">   //bardzo dziwny kod JS jaki pokazuje że jest możliwość użyłać HTML w JS
+    document.write("Cześć!<br>To jest mój program<br>I<br>Jest<br>On<br>Fajny!");
+  </script>
+
+  <hr>
+
+  <script type="text/javascript">
+    confirm("Czy jesteś pewien, że chcesz wejść na tą brzydką stronę internetową?")   //lepiej nie zachodź na to stronę - zastrzegam
+  </script>
+
+  <script language="JavaScript">
+    function pushbutton() {     //naciśniunty przycisk
+      alert("Hello!");          //i wypisany "Hello!"
+      //document.write("<b>Klik <b><br>");      to klik
+    }
+  </script>
+
+  <form>
+    <button type="button" name="Button1" onclick="pushbutton()">Naciśnij mnie</button>
+  </form>
+
+  <hr>
+
+  <script type="text/javascript">     //to komunikat
+    alert('Szanowny użytkowniku przeglądarki Chrome! Jesteś dzisiejszym szczęśliwym odwiedzającym: Prosimy o wypełnienie tej, kr. ankiety, w ramach „podziękowania” od nas, a otrzymasz szansę na wygranie super nowoczesnego tabletu Lenovo!”');
+  </script>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang = "pl">
+
+<head>
+  <title> JS </title>
+
+<script type="text/javascript">
+  document.write("<br>Tablicy 10 dowolnych elementów z zakresu liczb 0-59:<br>");
+  var tablica = [];
+  for (i = 0; i < 10; i++){
+    tablica[i] = Math.floor(Math.random() * (59-0))+0;
+    document.write(tablica[i] + " ");
+  }
+
+  document.write("<br>dodaję 3 dowolne liczby parzyste do tablicy metodą push:<br>");
+  var warunek = 0;
+  while (warunek < 3){
+    var temp = Math.floor(Math.random() * (59-0))+0;
+    if (temp % 2 == 0){
+      tablica.push(temp);
+      warunek++;
+    }
+  }
+
+  for (i = 0; i < tablica.length; i++){
+    document.write(tablica[i] + " ");
+  }
+
+  document.write("<br>usuniesz 3 dowolne liczby nieparzyste metodą pop:<br>");
+
+    var warunek = 0, i = 0;
+    while (warunek < 3){
+      if (tablica[i] % 2 != 0){
+        tablica.splice(i,1);
+        //tablica[i].pop();
+        warunek++;
+        i--;
+      }
+      i++;
+    }
+
+    for (i = 0; i < tablica.length; i++){
+      document.write(tablica[i] + " ");
+    }
+
+  /*
+  tablica.splice();
+  tablica[10] = 33;
+  for (i = 0; i < tablica.length; i++)
+    document.write(tablica[i] + " ");
+  */
+</script>
+
+</head>
+
+<body>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang = "pl">
+
+<head>
+  <title> JS </title>
+
+<script type="text/javascript">
+  function ewklid(m,n){
+    if (n == 0) return a;
+    else return ewklid(n,m % n);
+  }
+
+  var a = prompt('Liczba 1','');
+  var b = prompt('Liczba 1','');
+  document.write("<br>Największy wspólny dzielnik: "+ ewklid(a,b));
+
+</script>
+
+<script type="text/javascript">
+
+  function netto(p){
+    var emerytalna = 0.0976 * p;
+    var rentowa = 0.015 * p;
+    var chorobowa = 0.0245 * p;
+
+    return p - (emerytalna+rentowa+chorobowa);
+  }
+
+  var brutto = prompt('Wynagrodzenie za pracę (brutto)?','');
+  document.write ("Brutto: "+ brutto + "  Netto: "+ netto(brutto));
+</script>
+
+<script type="text/javascript">
+  function równo(a,b){
+    if (a == b)
+      document.write("<br>Są równe");
+    else
+      document.write("<br>Różnica: "+ (a - b));
+  }
+
+  var l1 = prompt('Liczba 1','');
+  var l2 = prompt('Liczba 1','');
+
+  równo(l1,l2);
+</script>
+
+
+
+
+</head>
+
+<body>
+</body>
+
+</html>

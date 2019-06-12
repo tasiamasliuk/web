@@ -1,0 +1,31 @@
+body {
+    background: #1d809f;
+}
+
+
+header a:hover{
+    color: #fafafa;
+    color: #f9c422;
+}
+
+#bg-img
+{
+    background: url('../img/home-back.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 600px;
+}
+
+#about{
+    margin-top: -100px;
+}
+
+#about .fa-facebook{
+    color:#6395e0;
+}
+#about .fa-pinterest{
+    color: rgb(236, 97, 97);
+}
+#about .fa-github{
+    color:#fafafa;
+}
